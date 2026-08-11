@@ -169,7 +169,6 @@ The AI assistant servlet reads the Gemini API key from:
 - `gemini.api.key` Java system property
 - `GEMINI_API_KEY` context parameter in `web/WEB-INF/web.xml`
 
-For GitHub and production deployment, do not commit real API keys. Use an environment variable or server-side configuration instead.
 
 Example:
 
@@ -177,17 +176,7 @@ Example:
 export GEMINI_API_KEY="your-api-key"
 ```
 
-## GitHub Publishing Notes
 
-Before pushing this project to GitHub:
-
-1. Remove real API keys and passwords from source files.
-2. Avoid committing private NetBeans files from `nbproject/private/`.
-3. Avoid committing generated files from `build/` unless your submission requires them.
-4. Keep the source code, `web/`, `nbproject/`, `build.xml`, and database script.
-5. Add screenshots or demo credentials only if they are safe to share.
-
-GitHub Pages cannot host this project because it is a Java Servlet application. Deploy it to Tomcat or another Java web application server.
 
 ## Suggested `.gitignore`
 
