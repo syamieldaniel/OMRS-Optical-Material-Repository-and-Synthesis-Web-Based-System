@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <display-name>OMRS</display-name>
+    
+    <context-param>
+        <param-name>GEMINI_API_KEY</param-name>
+        <param-value></param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>OMRS_UPLOAD_DIR</param-name>
+        <param-value>/home/s71964/files</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>OMRS_EMAIL_PROVIDER</param-name>
+        <param-value>brevo</param-value>
+    </context-param>
+    <context-param>
+        <param-name>OMRS_EMAIL_API_KEY</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>OMRS_EMAIL_FROM</param-name>
+        <param-value>syamieldaniel03@gmail.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>OMRS_EMAIL_FROM_NAME</param-name>
+        <param-value>OMRS</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>OMRS_SMTP_HOST</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>OMRS_SMTP_PORT</param-name>
+        <param-value>587</param-value>
+    </context-param>
+    <context-param>
+        <param-name>OMRS_SMTP_FROM</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>OMRS_SMTP_USERNAME</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>OMRS_SMTP_PASSWORD</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>OMRS_SMTP_STARTTLS</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>
